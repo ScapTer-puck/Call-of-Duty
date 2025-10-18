@@ -1,0 +1,82 @@
+/* --- Ефект плавного появлення сторінки --- */
+body {
+    animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* --- М’яке підсвічування тексту при наведенні --- */
+h2, h3, p {
+    transition: color 0.4s ease, text-shadow 0.4s ease;
+}
+
+h2:hover, h3:hover {
+    text-shadow: 0 0 10px yellow;
+}
+
+/* --- Стиль фону з легким градієнтом --- */
+body {
+    background: linear-gradient(180deg, #000000 0%, #111111 40%, #1a1a1a 100%);
+}
+
+/* --- Легка тінь під текстом для зручності читання --- */
+p {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+    line-height: 1.6;
+}
+
+/* --- Навігація у вигляді кнопок --- */
+nav a {
+    background-color: #003300;
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #228B22;
+    color: black;
+    box-shadow: 0 0 10px #00ff00;
+}
+
+/* --- Плавне з’явлення при прокрутці --- */
+section, header, hr {
+    animation: slideUp 1.2s ease-out;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* --- Невелика анімація при наведенні на зображення --- */
+img {
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255,255,255,0.1);
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(255,255,255,0.3);
+}
+
+/* Увесь текст на сайті — білий */
+body, h1, h2, h3, h4, h5, h6, p, a, nav, header, main, section {
+    color: white !important;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
