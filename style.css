@@ -79,3 +79,8 @@ body, h1, h2, h3, h4, h5, h6, p, a, nav, header, main, section {
 a {
     text-decoration: none;
 }
+
+.arrow-icon {
+    background-color:green;
+    border-radius:5px;
+}
